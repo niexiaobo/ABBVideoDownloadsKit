@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5F062201D87EDAF009FD9FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0621F1D87EDAF009FD9FB /* main.m */; };
+		F5F062231D87EDAF009FD9FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062221D87EDAF009FD9FB /* AppDelegate.m */; };
+		F5F062261D87EDAF009FD9FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062251D87EDAF009FD9FB /* ViewController.m */; };
+		F5F062291D87EDAF009FD9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F062271D87EDAF009FD9FB /* Main.storyboard */; };
+		F5F0622B1D87EDAF009FD9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F0622A1D87EDAF009FD9FB /* Assets.xcassets */; };
+		F5F0622E1D87EDAF009FD9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F0622C1D87EDAF009FD9FB /* LaunchScreen.storyboard */; };
+		F5F062391D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062381D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.m */; };
+		F5F062441D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062431D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m */; };
+		F5F062941D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062761D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m */; };
+		F5F062951D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F062771D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib */; };
+		F5F062961D87EE6A009FD9FB /* WHC_OffLineVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062791D87EE6A009FD9FB /* WHC_OffLineVideoVC.m */; };
+		F5F062971D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F0627A1D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib */; };
+		F5F062981D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0627D1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m */; };
+		F5F062991D87EE6A009FD9FB /* UIView+WHC_Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0627F1D87EE6A009FD9FB /* UIView+WHC_Loading.m */; };
+		F5F0629A1D87EE6A009FD9FB /* UIView+WHC_Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062811D87EE6A009FD9FB /* UIView+WHC_Toast.m */; };
+		F5F0629B1D87EE6A009FD9FB /* UIView+WHC_ViewProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062831D87EE6A009FD9FB /* UIView+WHC_ViewProperty.m */; };
+		F5F0629C1D87EE6A009FD9FB /* WHC_DownloadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062851D87EE6A009FD9FB /* WHC_DownloadObject.m */; };
+		F5FB66AB1D87F8ED00A39237 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5FB66AA1D87F8ED00A39237 /* ViewController.xib */; };
+		F5FB66AD1D87FAB600A39237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FB66AC1D87FAB600A39237 /* Foundation.framework */; };
+		F80A8EDBD42279A77F2C17B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A341F9527927B27A5D45564 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5F062351D87EDAF009FD9FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5F062131D87EDAF009FD9FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5F0621A1D87EDAF009FD9FB;
+			remoteInfo = ABBVideoDownloadPlayer;
+		};
+		F5F062401D87EDAF009FD9FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5F062131D87EDAF009FD9FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5F0621A1D87EDAF009FD9FB;
+			remoteInfo = ABBVideoDownloadPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A341F9527927B27A5D45564 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		683709A844C217391A82D121 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B490FFEBB404A6F349D664F0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F5F0621B1D87EDAF009FD9FB /* ABBVideoDownloadPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABBVideoDownloadPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F0621F1D87EDAF009FD9FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5F062211D87EDAF009FD9FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5F062221D87EDAF009FD9FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5F062241D87EDAF009FD9FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5F062251D87EDAF009FD9FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5F062281D87EDAF009FD9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5F0622A1D87EDAF009FD9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5F0622D1D87EDAF009FD9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5F0622F1D87EDAF009FD9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F062341D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABBVideoDownloadPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F062381D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABBVideoDownloadPlayerTests.m; sourceTree = "<group>"; };
+		F5F0623A1D87EDAF009FD9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F0623F1D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABBVideoDownloadPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F062431D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABBVideoDownloadPlayerUITests.m; sourceTree = "<group>"; };
+		F5F062451D87EDAF009FD9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F062751D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_FillScreenPlayerVC.h; sourceTree = "<group>"; };
+		F5F062761D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_FillScreenPlayerVC.m; sourceTree = "<group>"; };
+		F5F062771D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHC_OffLineVideoCell.xib; sourceTree = "<group>"; };
+		F5F062781D87EE6A009FD9FB /* WHC_OffLineVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_OffLineVideoVC.h; sourceTree = "<group>"; };
+		F5F062791D87EE6A009FD9FB /* WHC_OffLineVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_OffLineVideoVC.m; sourceTree = "<group>"; };
+		F5F0627A1D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHC_OffLineVideoVC.xib; sourceTree = "<group>"; };
+		F5F0627C1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WHC_PullRefresh.h"; sourceTree = "<group>"; };
+		F5F0627D1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+WHC_PullRefresh.m"; sourceTree = "<group>"; };
+		F5F0627E1D87EE6A009FD9FB /* UIView+WHC_Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WHC_Loading.h"; sourceTree = "<group>"; };
+		F5F0627F1D87EE6A009FD9FB /* UIView+WHC_Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WHC_Loading.m"; sourceTree = "<group>"; };
+		F5F062801D87EE6A009FD9FB /* UIView+WHC_Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WHC_Toast.h"; sourceTree = "<group>"; };
+		F5F062811D87EE6A009FD9FB /* UIView+WHC_Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WHC_Toast.m"; sourceTree = "<group>"; };
+		F5F062821D87EE6A009FD9FB /* UIView+WHC_ViewProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WHC_ViewProperty.h"; sourceTree = "<group>"; };
+		F5F062831D87EE6A009FD9FB /* UIView+WHC_ViewProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WHC_ViewProperty.m"; sourceTree = "<group>"; };
+		F5F062841D87EE6A009FD9FB /* WHC_DownloadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_DownloadObject.h; sourceTree = "<group>"; };
+		F5F062851D87EE6A009FD9FB /* WHC_DownloadObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_DownloadObject.m; sourceTree = "<group>"; };
+		F5FB66AA1D87F8ED00A39237 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F5FB66AC1D87FAB600A39237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5F062181D87EDAF009FD9FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FB66AD1D87FAB600A39237 /* Foundation.framework in Frameworks */,
+				F80A8EDBD42279A77F2C17B2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F062311D87EDAF009FD9FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F0623C1D87EDAF009FD9FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C37C8D79E1FCB50FB82B588D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB66AC1D87FAB600A39237 /* Foundation.framework */,
+				3A341F9527927B27A5D45564 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E21A106E17F95BF1A755F3FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				683709A844C217391A82D121 /* Pods.debug.xcconfig */,
+				B490FFEBB404A6F349D664F0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5F062121D87EDAF009FD9FB = {
+			isa = PBXGroup;
+			children = (
+				F5F0621D1D87EDAF009FD9FB /* ABBVideoDownloadPlayer */,
+				F5F062371D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests */,
+				F5F062421D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests */,
+				F5F0621C1D87EDAF009FD9FB /* Products */,
+				E21A106E17F95BF1A755F3FB /* Pods */,
+				C37C8D79E1FCB50FB82B588D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5F0621C1D87EDAF009FD9FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5F0621B1D87EDAF009FD9FB /* ABBVideoDownloadPlayer.app */,
+				F5F062341D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.xctest */,
+				F5F0623F1D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5F0621D1D87EDAF009FD9FB /* ABBVideoDownloadPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB66AA1D87F8ED00A39237 /* ViewController.xib */,
+				F5F062731D87EE6A009FD9FB /* example */,
+				F5F062211D87EDAF009FD9FB /* AppDelegate.h */,
+				F5F062221D87EDAF009FD9FB /* AppDelegate.m */,
+				F5F062241D87EDAF009FD9FB /* ViewController.h */,
+				F5F062251D87EDAF009FD9FB /* ViewController.m */,
+				F5F062271D87EDAF009FD9FB /* Main.storyboard */,
+				F5F0622A1D87EDAF009FD9FB /* Assets.xcassets */,
+				F5F0622C1D87EDAF009FD9FB /* LaunchScreen.storyboard */,
+				F5F0622F1D87EDAF009FD9FB /* Info.plist */,
+				F5F0621E1D87EDAF009FD9FB /* Supporting Files */,
+			);
+			path = ABBVideoDownloadPlayer;
+			sourceTree = "<group>";
+		};
+		F5F0621E1D87EDAF009FD9FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5F0621F1D87EDAF009FD9FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5F062371D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5F062381D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.m */,
+				F5F0623A1D87EDAF009FD9FB /* Info.plist */,
+			);
+			path = ABBVideoDownloadPlayerTests;
+			sourceTree = "<group>";
+		};
+		F5F062421D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5F062431D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m */,
+				F5F062451D87EDAF009FD9FB /* Info.plist */,
+			);
+			path = ABBVideoDownloadPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F5F062731D87EE6A009FD9FB /* example */ = {
+			isa = PBXGroup;
+			children = (
+				F5F062741D87EE6A009FD9FB /* UI */,
+				F5F0627B1D87EE6A009FD9FB /* UIUnitCore */,
+				F5F062841D87EE6A009FD9FB /* WHC_DownloadObject.h */,
+				F5F062851D87EE6A009FD9FB /* WHC_DownloadObject.m */,
+			);
+			path = example;
+			sourceTree = "<group>";
+		};
+		F5F062741D87EE6A009FD9FB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F5F062751D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.h */,
+				F5F062761D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m */,
+				F5F062771D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib */,
+				F5F062781D87EE6A009FD9FB /* WHC_OffLineVideoVC.h */,
+				F5F062791D87EE6A009FD9FB /* WHC_OffLineVideoVC.m */,
+				F5F0627A1D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F5F0627B1D87EE6A009FD9FB /* UIUnitCore */ = {
+			isa = PBXGroup;
+			children = (
+				F5F0627C1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.h */,
+				F5F0627D1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m */,
+				F5F0627E1D87EE6A009FD9FB /* UIView+WHC_Loading.h */,
+				F5F0627F1D87EE6A009FD9FB /* UIView+WHC_Loading.m */,
+				F5F062801D87EE6A009FD9FB /* UIView+WHC_Toast.h */,
+				F5F062811D87EE6A009FD9FB /* UIView+WHC_Toast.m */,
+				F5F062821D87EE6A009FD9FB /* UIView+WHC_ViewProperty.h */,
+				F5F062831D87EE6A009FD9FB /* UIView+WHC_ViewProperty.m */,
+			);
+			path = UIUnitCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5F0621A1D87EDAF009FD9FB /* ABBVideoDownloadPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5F062481D87EDAF009FD9FB /* Build configuration list for PBXNativeTarget "ABBVideoDownloadPlayer" */;
+			buildPhases = (
+				EA50466E952FA3FFF5489166 /* Check Pods Manifest.lock */,
+				F5F062171D87EDAF009FD9FB /* Sources */,
+				F5F062181D87EDAF009FD9FB /* Frameworks */,
+				F5F062191D87EDAF009FD9FB /* Resources */,
+				E5505B57384F4F94A1A7F6DD /* Embed Pods Frameworks */,
+				28959C862F198BD4F9529852 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ABBVideoDownloadPlayer;
+			productName = ABBVideoDownloadPlayer;
+			productReference = F5F0621B1D87EDAF009FD9FB /* ABBVideoDownloadPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5F062331D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5F0624B1D87EDAF009FD9FB /* Build configuration list for PBXNativeTarget "ABBVideoDownloadPlayerTests" */;
+			buildPhases = (
+				F5F062301D87EDAF009FD9FB /* Sources */,
+				F5F062311D87EDAF009FD9FB /* Frameworks */,
+				F5F062321D87EDAF009FD9FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5F062361D87EDAF009FD9FB /* PBXTargetDependency */,
+			);
+			name = ABBVideoDownloadPlayerTests;
+			productName = ABBVideoDownloadPlayerTests;
+			productReference = F5F062341D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5F0623E1D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5F0624E1D87EDAF009FD9FB /* Build configuration list for PBXNativeTarget "ABBVideoDownloadPlayerUITests" */;
+			buildPhases = (
+				F5F0623B1D87EDAF009FD9FB /* Sources */,
+				F5F0623C1D87EDAF009FD9FB /* Frameworks */,
+				F5F0623D1D87EDAF009FD9FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5F062411D87EDAF009FD9FB /* PBXTargetDependency */,
+			);
+			name = ABBVideoDownloadPlayerUITests;
+			productName = ABBVideoDownloadPlayerUITests;
+			productReference = F5F0623F1D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5F062131D87EDAF009FD9FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = NieXiaobo;
+				TargetAttributes = {
+					F5F0621A1D87EDAF009FD9FB = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z45C4NCFQH;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					F5F062331D87EDAF009FD9FB = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F5F0621A1D87EDAF009FD9FB;
+					};
+					F5F0623E1D87EDAF009FD9FB = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F5F0621A1D87EDAF009FD9FB;
+					};
+				};
+			};
+			buildConfigurationList = F5F062161D87EDAF009FD9FB /* Build configuration list for PBXProject "ABBVideoDownloadPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5F062121D87EDAF009FD9FB;
+			productRefGroup = F5F0621C1D87EDAF009FD9FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5F0621A1D87EDAF009FD9FB /* ABBVideoDownloadPlayer */,
+				F5F062331D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests */,
+				F5F0623E1D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5F062191D87EDAF009FD9FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F062971D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib in Resources */,
+				F5F062951D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib in Resources */,
+				F5F0622E1D87EDAF009FD9FB /* LaunchScreen.storyboard in Resources */,
+				F5F0622B1D87EDAF009FD9FB /* Assets.xcassets in Resources */,
+				F5FB66AB1D87F8ED00A39237 /* ViewController.xib in Resources */,
+				F5F062291D87EDAF009FD9FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F062321D87EDAF009FD9FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F0623D1D87EDAF009FD9FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28959C862F198BD4F9529852 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5505B57384F4F94A1A7F6DD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA50466E952FA3FFF5489166 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5F062171D87EDAF009FD9FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F062991D87EE6A009FD9FB /* UIView+WHC_Loading.m in Sources */,
+				F5F062941D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m in Sources */,
+				F5F0629C1D87EE6A009FD9FB /* WHC_DownloadObject.m in Sources */,
+				F5F062261D87EDAF009FD9FB /* ViewController.m in Sources */,
+				F5F062231D87EDAF009FD9FB /* AppDelegate.m in Sources */,
+				F5F062961D87EE6A009FD9FB /* WHC_OffLineVideoVC.m in Sources */,
+				F5F062201D87EDAF009FD9FB /* main.m in Sources */,
+				F5F0629B1D87EE6A009FD9FB /* UIView+WHC_ViewProperty.m in Sources */,
+				F5F062981D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m in Sources */,
+				F5F0629A1D87EE6A009FD9FB /* UIView+WHC_Toast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F062301D87EDAF009FD9FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F062391D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F0623B1D87EDAF009FD9FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F062441D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5F062361D87EDAF009FD9FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5F0621A1D87EDAF009FD9FB /* ABBVideoDownloadPlayer */;
+			targetProxy = F5F062351D87EDAF009FD9FB /* PBXContainerItemProxy */;
+		};
+		F5F062411D87EDAF009FD9FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5F0621A1D87EDAF009FD9FB /* ABBVideoDownloadPlayer */;
+			targetProxy = F5F062401D87EDAF009FD9FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5F062271D87EDAF009FD9FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5F062281D87EDAF009FD9FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5F0622C1D87EDAF009FD9FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5F0622D1D87EDAF009FD9FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5F062461D87EDAF009FD9FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5F062471D87EDAF009FD9FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5F062491D87EDAF009FD9FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 683709A844C217391A82D121 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ABBVideoDownloadPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DataPort.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5F0624A1D87EDAF009FD9FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B490FFEBB404A6F349D664F0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ABBVideoDownloadPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DataPort.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5F0624C1D87EDAF009FD9FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ABBVideoDownloadPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NXB.ABBVideoDownloadPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABBVideoDownloadPlayer.app/ABBVideoDownloadPlayer";
+			};
+			name = Debug;
+		};
+		F5F0624D1D87EDAF009FD9FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ABBVideoDownloadPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NXB.ABBVideoDownloadPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABBVideoDownloadPlayer.app/ABBVideoDownloadPlayer";
+			};
+			name = Release;
+		};
+		F5F0624F1D87EDAF009FD9FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ABBVideoDownloadPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NXB.ABBVideoDownloadPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ABBVideoDownloadPlayer;
+			};
+			name = Debug;
+		};
+		F5F062501D87EDAF009FD9FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ABBVideoDownloadPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = NXB.ABBVideoDownloadPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ABBVideoDownloadPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5F062161D87EDAF009FD9FB /* Build configuration list for PBXProject "ABBVideoDownloadPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F062461D87EDAF009FD9FB /* Debug */,
+				F5F062471D87EDAF009FD9FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5F062481D87EDAF009FD9FB /* Build configuration list for PBXNativeTarget "ABBVideoDownloadPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F062491D87EDAF009FD9FB /* Debug */,
+				F5F0624A1D87EDAF009FD9FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5F0624B1D87EDAF009FD9FB /* Build configuration list for PBXNativeTarget "ABBVideoDownloadPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F0624C1D87EDAF009FD9FB /* Debug */,
+				F5F0624D1D87EDAF009FD9FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5F0624E1D87EDAF009FD9FB /* Build configuration list for PBXNativeTarget "ABBVideoDownloadPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5F0624F1D87EDAF009FD9FB /* Debug */,
+				F5F062501D87EDAF009FD9FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5F062131D87EDAF009FD9FB /* Project object */;
+}

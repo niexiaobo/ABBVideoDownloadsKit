@@ -1,0 +1,23 @@
+PODS:
+  - WHCNetWorkKit (0.0.3):
+    - WHCNetWorkKit/NSURLConnection (= 0.0.3)
+    - WHCNetWorkKit/NSURLSession (= 0.0.3)
+    - WHCNetWorkKit/Reachability (= 0.0.3)
+    - WHCNetWorkKit/UIKit (= 0.0.3)
+    - WHCNetWorkKit/UtillKit (= 0.0.3)
+  - WHCNetWorkKit/NSURLConnection (0.0.3):
+    - WHCNetWorkKit/Reachability
+  - WHCNetWorkKit/NSURLSession (0.0.3):
+    - WHCNetWorkKit/NSURLConnection
+  - WHCNetWorkKit/Reachability (0.0.3)
+  - WHCNetWorkKit/UIKit (0.0.3):
+    - WHCNetWorkKit/NSURLConnection
+  - WHCNetWorkKit/UtillKit (0.0.3)
+
+DEPENDENCIES:
+  - WHCNetWorkKit (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  WHCNetWorkKit: 169c27c8b8008e8f8d679277929777083a2379b9
+
+COCOAPODS: 0.39.0
