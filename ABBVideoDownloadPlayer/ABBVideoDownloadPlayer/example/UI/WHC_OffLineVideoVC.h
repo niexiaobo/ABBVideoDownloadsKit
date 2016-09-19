@@ -31,6 +31,4 @@
 
 @interface WHC_OffLineVideoVC : UIViewController
 
-- (void)fetchDataResult;
-
 @end

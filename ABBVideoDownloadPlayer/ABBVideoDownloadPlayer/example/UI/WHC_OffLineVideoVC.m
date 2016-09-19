@@ -25,6 +25,8 @@
 
 #import "WHCNetWorkKit.h"
 
+#import "DownloadObject.h"
+
 #define kFontSize             (15.0)
 #define kCellHeight           (57.0)                   //cell高度
 #define kMinPlaySize          (10.0)                   //最小播放尺寸
@@ -170,6 +172,7 @@
     _downloadObject = object;
     if (_downloadObject.downloadState == WHCNone ||
         _downloadObject.downloadState == WHCDownloading ) {
+        
         _downloadObject.downloadState = WHCDownloadWaitting;
     }
 #if WHC_BackgroundDownload
@@ -355,6 +358,7 @@
 }
 
 - (void)initData{
+    
     _downloadObjectArr = [NSMutableArray arrayWithArray:[WHC_DownloadObject readDiskAllCache]];
     [_offLineTableView reloadData];
 }

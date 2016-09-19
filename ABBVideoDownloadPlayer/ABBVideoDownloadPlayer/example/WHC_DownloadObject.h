@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreModel.h"
+#import "DownloadObject.h"
 
 typedef NS_OPTIONS(NSUInteger, WHCDownloadState) {
     WHCNone = 1 << 0,
@@ -16,7 +18,7 @@ typedef NS_OPTIONS(NSUInteger, WHCDownloadState) {
     WHCDownloadWaitting = 1 << 4
 };
 
-@interface WHC_DownloadObject : NSObject<NSCoding>
+@interface WHC_DownloadObject : NSObject <NSCoding>
 
 @property (nonatomic , copy) NSString * fileName;
 @property (nonatomic , copy) NSString * downloadSpeed;
@@ -29,6 +31,7 @@ typedef NS_OPTIONS(NSUInteger, WHCDownloadState) {
 @property (nonatomic , copy , readonly)NSString * totalLenghtToString;
 @property (nonatomic , copy , readonly)NSString * downloadProcessText;
 @property (nonatomic , copy) NSString * etag;
+
 + (NSString *)cacheDirectory;
 + (NSString *)cachePlistDirectory;
 + (NSString *)cachePlistPath;

@@ -37,7 +37,11 @@ const static double k1MB = 1024 * 1024;
         _downloadPath = [aDecoder decodeObjectForKey:@"downloadPath"];
         _currentDownloadLenght = [aDecoder decodeInt64ForKey:@"currentDownloadLenght"];
         _totalLenght = [aDecoder decodeInt64ForKey:@"totalLenght"];
+     
+        
         _downloadState = _totalLenght != 0 ? (self.currentDownloadLenght == self.totalLenght ? WHCDownloadCompleted : WHCDownloadCanceled) : WHCNone;
+        
+        NSLog(@"--_downloadState =->%lu<- _totalLenght-->%llu<----",(unsigned long)_downloadState,_currentDownloadLenght);
     }
     return self;
 }
@@ -51,6 +55,8 @@ const static double k1MB = 1024 * 1024;
 }
 
 + (NSString *)cachePlistPath {
+    
+    
     return [NSString stringWithFormat:@"%@WHCDownloadCache.plist",[WHC_DownloadObject cachePlistDirectory]];
 }
 
@@ -59,7 +65,10 @@ const static double k1MB = 1024 * 1024;
 }
 
 + (WHC_DownloadObject *)readDiskCache:(NSString *)downloadPath {
-    return [NSKeyedUnarchiver unarchiveObjectWithFile:[WHC_DownloadObject getCachedFileName:downloadPath]];
+    
+    WHC_DownloadObject *DownloadOb2 = [NSKeyedUnarchiver unarchiveObjectWithFile:[WHC_DownloadObject getCachedFileName:downloadPath]];
+    NSLog(@"--WHC_DownloadObject *DownloadOb2 = -->%@<----",DownloadOb2);
+    return DownloadOb2;
 }
 
 + (BOOL)existLocalSavePath:(NSString *)downloadPath {
@@ -71,12 +80,51 @@ const static double k1MB = 1024 * 1024;
 + (NSArray *)readDiskAllCache {
     NSMutableArray * downloadObjectArr = [NSMutableArray array];
     NSMutableDictionary * cacheDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:[WHC_DownloadObject cachePlistPath]];
+    
+    NSLog(@"--WHCDownloadCache.plist-->%@<----",[NSString stringWithFormat:@"%@WHCDownloadCache.plist",[WHC_DownloadObject cachePlistDirectory]]);
+    
     if (cacheDictionary != nil) {
         NSArray * allKeys = [cacheDictionary allKeys];
         for (NSString * path in allKeys) {
-            [downloadObjectArr addObject:[WHC_DownloadObject readDiskCache:path]];
+            
+            WHC_DownloadObject *DownloadOb = [WHC_DownloadObject readDiskCache:path];
+            NSLog(@"--WHC_DownloadObject *DownloadOb = -->%@<----",DownloadOb);
+            [downloadObjectArr addObject:DownloadOb];
         }
     }
+    
+    
+    
+    
+    //简单举例：查询DownloadObject表
+//    [DownloadObject selectWhereMainQueue:nil groupBy:nil orderBy:nil limit:nil selectResultsBlock:^(NSArray *selectResults) {
+//        downloadObjectArr = [NSMutableArray arrayWithArray:selectResults];
+//        for (DownloadObject *temsoao in downloadObjectArr) {
+//            switch (temsoao.downloadState) {
+//                case 0:
+//                    temsoao.downloadState = WHCNone;
+//                    break;
+//                case 1:
+//                    temsoao.downloadState = WHCDownloading;
+//                    break;
+//                case 2:
+//                    temsoao.downloadState = WHCDownloadCompleted;
+//                    break;
+//                case 3:
+//                    temsoao.downloadState = WHCDownloadCanceled;
+//                    break;
+//                case 4:
+//                    temsoao.downloadState = WHCDownloadWaitting;
+//                    break;
+//                default:
+//                    temsoao.downloadState = WHCDownloadWaitting;
+//                    break;
+//            }
+//            
+//        }
+//        
+//    }];
+
     return downloadObjectArr;
 }
 
@@ -132,7 +180,22 @@ const static double k1MB = 1024 * 1024;
             cacheDictionary = [NSMutableDictionary dictionary];
         }
         [cacheDictionary setObject:@"WHC" forKey:_fileName];//_downloadPath
+        
         [cacheDictionary writeToFile:[WHC_DownloadObject cachePlistPath] atomically:YES];
+        
+        
+//        DownloadObject *loadObject = [[DownloadObject alloc] init];//创建表
+//        loadObject.fileName = self.fileName;
+//        loadObject.downloadState = 1;
+//        loadObject.totalLenght = self.totalLenght;
+//        loadObject.currentDownloadLenght = self.currentDownloadLenght;
+//        loadObject.downloadPath = self.downloadPath;
+//        loadObject.downloadSpeed = self.downloadSpeed;
+//        loadObject.hostID = self.hostID;
+//        [DownloadObject save:loadObject resBlock:^(BOOL res) {
+//            NSLog(@"---->保存DownloadObject成功：=%@====-%ld---",loadObject.fileName,(long)loadObject.hostID);
+//        }];
+        
     }
 }
 
