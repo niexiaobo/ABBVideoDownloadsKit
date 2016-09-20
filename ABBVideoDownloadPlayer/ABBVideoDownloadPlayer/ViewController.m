@@ -14,7 +14,6 @@
  */
 
 #import "ViewController.h"
-#import "WHC_OffLineVideoVC.h"
 #import "UIView+WHC_Toast.h"
 #import "UIView+WHC_Loading.h"
 #import "UIScrollView+WHC_PullRefresh.h"

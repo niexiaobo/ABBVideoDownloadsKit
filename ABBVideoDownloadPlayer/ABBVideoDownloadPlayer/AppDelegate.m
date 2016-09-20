@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "WHC_OffLineVideoVC.h"
 #import <WHCNetWorkKit/WHC_HttpManager.h>
 @interface AppDelegate ()
 

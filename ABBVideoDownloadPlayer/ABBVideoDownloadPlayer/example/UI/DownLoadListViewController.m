@@ -8,7 +8,6 @@
 
 #import "DownLoadListViewController.h"
 #import "UIView+WHC_Toast.h"
-#import "WHC_FillScreenPlayerVC.h"
 #import "DetailViewController.h"
 
 
@@ -71,15 +70,11 @@
 }
 
 -(void) playMp4:(NSString*)url fileName:(NSString*)fileName{
-    //播放器1
-//    WHC_FillScreenPlayerVC  * vc = [WHC_FillScreenPlayerVC new];
-//    vc.playUrl = [NSURL fileURLWithPath:url];
-//    [self.navigationController pushViewController:vc animated:YES];
-
-    //播放器2
+    //播放器
     DetailViewController *detailVC = [[DetailViewController alloc]init];
     detailVC.URLString = url;
     detailVC.title = fileName;
+    detailVC.isLocalURLString = YES;
     [self.navigationController pushViewController:detailVC animated:YES];
     
 }

@@ -223,17 +223,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    playerFrame = CGRectMake(0, 0, kScreenWidth, (kScreenWidth)*(0.75));
+    playerFrame = CGRectMake(0, 0, kScreenWidth, (kScreenWidth)*(0.6));
     wmPlayer = [[WMPlayer alloc]initWithFrame:playerFrame];
     wmPlayer.delegate = self;
 
-    //本地
-    NSURL *URL = [NSURL fileURLWithPath:self.URLString];
-    NSString *urlstring = [URL absoluteString];
-    [wmPlayer setURLString:urlstring];
-    
-    //网络
-//    wmPlayer.URLString = self.URLString;
+    if (self.isLocalURLString) {
+        //本地
+        NSURL *URL = [NSURL fileURLWithPath:self.URLString];
+        NSString *urlstring = [URL absoluteString];
+        [wmPlayer setURLString:urlstring];
+    } else {
+        //网络
+        wmPlayer.URLString = self.URLString;
+    }
     
     wmPlayer.titleLabel.text = self.title;
     wmPlayer.closeBtn.hidden = NO;

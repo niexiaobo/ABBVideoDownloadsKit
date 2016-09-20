@@ -607,8 +607,8 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     [self.layer insertSublayer:_playerLayer atIndex:0];
     self.state = WMPlayerStateBuffering;
     if (self.closeBtnStyle==CloseBtnStylePop) {
-        [_closeBtn setImage:[UIImage imageNamed:WMPlayerSrcName(@"play_back.png")] ?: [UIImage imageNamed:WMPlayerFrameworkSrcName(@"play_back.png")] forState:UIControlStateNormal];
-        [_closeBtn setImage:[UIImage imageNamed:WMPlayerSrcName(@"play_back.png")] ?: [UIImage imageNamed:WMPlayerFrameworkSrcName(@"play_back.png")] forState:UIControlStateSelected];
+        [_closeBtn setImage:[UIImage imageNamed:WMPlayerSrcName(@"ba_back.png")] ?: [UIImage imageNamed:WMPlayerFrameworkSrcName(@"ba_back.png")] forState:UIControlStateNormal];
+        [_closeBtn setImage:[UIImage imageNamed:WMPlayerSrcName(@"ba_back.png")] ?: [UIImage imageNamed:WMPlayerFrameworkSrcName(@"ba_back.png")] forState:UIControlStateSelected];
         
     }else{
         [_closeBtn setImage:[UIImage imageNamed:WMPlayerSrcName(@"close")] ?: [UIImage imageNamed:WMPlayerFrameworkSrcName(@"close")] forState:UIControlStateNormal];

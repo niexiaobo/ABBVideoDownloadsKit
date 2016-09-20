@@ -62,10 +62,6 @@
 		F5F0622E1D87EDAF009FD9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F0622C1D87EDAF009FD9FB /* LaunchScreen.storyboard */; };
 		F5F062391D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062381D87EDAF009FD9FB /* ABBVideoDownloadPlayerTests.m */; };
 		F5F062441D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062431D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m */; };
-		F5F062941D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062761D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m */; };
-		F5F062951D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F062771D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib */; };
-		F5F062961D87EE6A009FD9FB /* WHC_OffLineVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062791D87EE6A009FD9FB /* WHC_OffLineVideoVC.m */; };
-		F5F062971D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F0627A1D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib */; };
 		F5F062981D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0627D1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m */; };
 		F5F062991D87EE6A009FD9FB /* UIView+WHC_Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F0627F1D87EE6A009FD9FB /* UIView+WHC_Loading.m */; };
 		F5F0629A1D87EE6A009FD9FB /* UIView+WHC_Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F062811D87EE6A009FD9FB /* UIView+WHC_Toast.m */; };
@@ -213,12 +209,6 @@
 		F5F0623F1D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABBVideoDownloadPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F062431D87EDAF009FD9FB /* ABBVideoDownloadPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABBVideoDownloadPlayerUITests.m; sourceTree = "<group>"; };
 		F5F062451D87EDAF009FD9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5F062751D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_FillScreenPlayerVC.h; sourceTree = "<group>"; };
-		F5F062761D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_FillScreenPlayerVC.m; sourceTree = "<group>"; };
-		F5F062771D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHC_OffLineVideoCell.xib; sourceTree = "<group>"; };
-		F5F062781D87EE6A009FD9FB /* WHC_OffLineVideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_OffLineVideoVC.h; sourceTree = "<group>"; };
-		F5F062791D87EE6A009FD9FB /* WHC_OffLineVideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_OffLineVideoVC.m; sourceTree = "<group>"; };
-		F5F0627A1D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WHC_OffLineVideoVC.xib; sourceTree = "<group>"; };
 		F5F0627C1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WHC_PullRefresh.h"; sourceTree = "<group>"; };
 		F5F0627D1D87EE6A009FD9FB /* UIScrollView+WHC_PullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+WHC_PullRefresh.m"; sourceTree = "<group>"; };
 		F5F0627E1D87EE6A009FD9FB /* UIView+WHC_Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WHC_Loading.h"; sourceTree = "<group>"; };
@@ -584,19 +574,6 @@
 			path = FmdbModel;
 			sourceTree = "<group>";
 		};
-		F58ADF031D8FC96C00F1B67D /* oldVC */ = {
-			isa = PBXGroup;
-			children = (
-				F5F062751D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.h */,
-				F5F062761D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m */,
-				F5F062771D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib */,
-				F5F062781D87EE6A009FD9FB /* WHC_OffLineVideoVC.h */,
-				F5F062791D87EE6A009FD9FB /* WHC_OffLineVideoVC.m */,
-				F5F0627A1D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib */,
-			);
-			name = oldVC;
-			sourceTree = "<group>";
-		};
 		F58ADF0A1D8FE3C800F1B67D /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,7 +666,6 @@
 		F5F062741D87EE6A009FD9FB /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F58ADF031D8FC96C00F1B67D /* oldVC */,
 				F58ADEF81D8FB33300F1B67D /* DownLoadListViewController.h */,
 				F58ADEF91D8FB33300F1B67D /* DownLoadListViewController.m */,
 				F58ADEFB1D8FB3DF00F1B67D /* TableBaseViewController.h */,
@@ -828,8 +804,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F062971D87EE6A009FD9FB /* WHC_OffLineVideoVC.xib in Resources */,
-				F5F062951D87EE6A009FD9FB /* WHC_OffLineVideoCell.xib in Resources */,
 				F58ADED71D8E9D6200F1B67D /* SVP.bundle in Resources */,
 				F58ADED91D8E9D6200F1B67D /* SVProgressHUD.bundle in Resources */,
 				F5F0622E1D87EDAF009FD9FB /* LaunchScreen.storyboard in Resources */,
@@ -918,7 +892,6 @@
 				F540E4971D910CB300D26CBF /* View+MASAdditions.m in Sources */,
 				F58ADEE31D8E9D6200F1B67D /* NSObject+Save.m in Sources */,
 				F58ADEE51D8E9D6200F1B67D /* NSObject+Update.m in Sources */,
-				F5F062941D87EE6A009FD9FB /* WHC_FillScreenPlayerVC.m in Sources */,
 				F58ADEDC1D8E9D6200F1B67D /* NSArray+CoreModel.m in Sources */,
 				F540E4931D910CB300D26CBF /* MASViewAttribute.m in Sources */,
 				F58ADEDD1D8E9D6200F1B67D /* NSDictionary+Sqlite.m in Sources */,
@@ -937,7 +910,6 @@
 				F5F062231D87EDAF009FD9FB /* AppDelegate.m in Sources */,
 				F58ADEF11D8E9D6200F1B67D /* FMResultSet.m in Sources */,
 				F58ADEF01D8E9D6200F1B67D /* FMDatabaseQueue.m in Sources */,
-				F5F062961D87EE6A009FD9FB /* WHC_OffLineVideoVC.m in Sources */,
 				F5F062201D87EDAF009FD9FB /* main.m in Sources */,
 				F58ADEFD1D8FB3DF00F1B67D /* TableBaseViewController.m in Sources */,
 				F58ADEE41D8E9D6200F1B67D /* NSObject+Select.m in Sources */,

@@ -12,4 +12,5 @@
 
 @interface DetailViewController : UIViewController
 @property (nonatomic, retain)NSString * URLString;
+@property (nonatomic, assign) BOOL isLocalURLString;
 @end
