@@ -9,6 +9,8 @@
 #import "DownLoadListViewController.h"
 #import "UIView+WHC_Toast.h"
 #import "WHC_FillScreenPlayerVC.h"
+#import "DetailViewController.h"
+
 
 @interface DownLoadListViewController ()<DownLoadListCellDelegate>
 @property (nonatomic , strong)NSMutableArray *downloadObjectArr;
@@ -26,6 +28,11 @@
     [self initData];
     [self layoutUI];
 }
+
+-(void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)layoutUI{
     [self.tableView registerNib:[UINib nibWithNibName:kCellName bundle:[NSBundle mainBundle]] forCellReuseIdentifier:kCellName];
 }
@@ -60,12 +67,21 @@
     WHC_DownloadObject * downloadObject = _downloadObjectArr[index];
     NSString *playUrl = [NSString stringWithFormat:@"%@%@",[WHC_DownloadObject videoDirectory],downloadObject.fileName];
     
-    [self playMp4:playUrl];
+    [self playMp4:playUrl fileName:downloadObject.fileName];
 }
--(void) playMp4:(NSString*)url{
-    WHC_FillScreenPlayerVC  * vc = [WHC_FillScreenPlayerVC new];
-    vc.playUrl = [NSURL fileURLWithPath:url];
-    [self.navigationController pushViewController:vc animated:NO];
+
+-(void) playMp4:(NSString*)url fileName:(NSString*)fileName{
+    //播放器1
+//    WHC_FillScreenPlayerVC  * vc = [WHC_FillScreenPlayerVC new];
+//    vc.playUrl = [NSURL fileURLWithPath:url];
+//    [self.navigationController pushViewController:vc animated:YES];
+
+    //播放器2
+    DetailViewController *detailVC = [[DetailViewController alloc]init];
+    detailVC.URLString = url;
+    detailVC.title = fileName;
+    [self.navigationController pushViewController:detailVC animated:YES];
+    
 }
 - (void)movieFinishedCallback:(NSNotification *)notifiy{
 }

@@ -59,7 +59,10 @@
 - (void)initData {
     _fileNameArr = [NSMutableArray array];
     for (NSInteger i = 0; i < 10 ; i++) {
-        [_fileNameArr addObject:[NSString stringWithFormat:@"%@%d    (%@)",kWHC_CellName,(int)i + 1,@"单击下载视频文件"]];
+//        [_fileNameArr addObject:[NSString stringWithFormat:@"%@%d    (%@)",kWHC_CellName,(int)i + 1,@"单击下载视频文件"]];
+        
+        [_fileNameArr addObject:[NSString stringWithFormat:@"downLoad%dVideo",(int)i + 1]];
+        
     }
 }
 
@@ -170,7 +173,7 @@
                   downloadObject.downloadState = WHCDownloading;
                   downloadObject.currentDownloadLenght = downloadOperation.recvDataLenght;
                   downloadObject.totalLenght = downloadOperation.fileTotalLenght;
-                  downloadObject.hostID = indexPath.row;
+//                  downloadObject.hostID = indexPath.row;
                   [downloadObject writeDiskCache];
                   
                   
