@@ -59,6 +59,7 @@
         tempDownloadObject.totalLenght = downloadObject.totalLenght;
         tempDownloadObject.downloadSpeed = downloadObject.downloadSpeed;
         tempDownloadObject.downloadState = downloadObject.downloadState;
+        
     }
 }
 

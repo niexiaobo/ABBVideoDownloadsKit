@@ -115,6 +115,7 @@
             downloadTask.delegate = delegate;
             downloadTask.strUrl = strUrl;
             downloadTask.delegate = delegate;
+            
             [self startDownload:downloadTask];
         }
     }else {
@@ -127,6 +128,62 @@
     return downloadTask;
     
 }
+
+- (nullable WHC_DownloadSessionTask *)downloadnxb:(nonnull NSString *)strUrl
+                                      savePath:(nonnull NSString *)savePath
+                                  saveFileName:(nullable NSString *)saveFileName
+                                         delegate:(nullable id<WHC_DownloadDelegate>)delegate   response:(nullable WHCResponse)responseBlock
+                                          process:(nullable WHCProgress)processBlock
+                                      didFinished:(nullable WHCDidFinished)finishedBlock {
+    WHC_DownloadSessionTask  * downloadTask = nil;
+    NSString * fileName = nil;
+    if (strUrl != nil && ![[WHC_HttpManager shared].failedUrls containsObject:strUrl]) {
+        fileName = [[WHC_HttpManager shared] handleFileName:saveFileName url:strUrl];
+        for (WHC_DownloadSessionTask * tempDownloadTask in _downloadTaskArr) {
+            if ([fileName isEqualToString: tempDownloadTask.saveFileName]){
+                __autoreleasing NSError * error = [[WHC_HttpManager shared] error:[NSString stringWithFormat:@"%@:已经在下载中",fileName]];
+                if (delegate && [delegate respondsToSelector:@selector(WHCDownloadResponse:error:ok:)]) {
+                    [delegate WHCDownloadResponse:tempDownloadTask error:error ok:NO];
+                } else if (delegate && [delegate respondsToSelector:@selector(WHCDownloadDidFinished:data:error:success:)]) {
+                    [delegate WHCDownloadDidFinished:tempDownloadTask data:nil error:error success:NO];
+                }
+                return tempDownloadTask;
+            }
+        }
+        if([[WHC_HttpManager shared] createFileSavePath:savePath]) {
+            
+            downloadTask = [WHC_DownloadSessionTask new];
+            downloadTask.requestType = WHCHttpRequestFileDownload;
+            downloadTask.saveFileName = fileName;
+            downloadTask.saveFilePath = savePath;
+            downloadTask.delegate = delegate;
+            downloadTask.strUrl = strUrl;
+            downloadTask.delegate = delegate;
+            downloadTask.didFinishedBlock = ^(WHC_BaseOperation *operation,
+                                              NSData *data,
+                                              NSError *error,
+                                              BOOL isSuccess) {
+                if (!isSuccess && error.code == 404) {
+                    [[WHC_HttpManager shared].failedUrls addObject:strUrl];
+                }
+                if (finishedBlock) {
+                    finishedBlock(operation , data , error , isSuccess);
+                }
+            };
+            
+            [self startDownload:downloadTask];
+        }
+    }else {
+        __autoreleasing NSError * error = [[WHC_HttpManager shared] error:[NSString stringWithFormat:@"%@:请求失败",strUrl]];
+        if (delegate &&
+            [delegate respondsToSelector:@selector(WHCDownloadDidFinished:data:error:success:)]) {
+            [delegate WHCDownloadDidFinished:downloadTask data:nil error:error success:NO];
+        }
+    }
+    return downloadTask;
+    
+}
+
 
 - (nullable WHC_DownloadSessionTask *)download:(nonnull NSString *)strUrl
                                     savePath:(nonnull NSString *)savePath

@@ -76,6 +76,8 @@
     if (_downloadObject.downloadState != WHCDownloading) {
         [self removeDownloadAnimtion];
     }else {
+        
+        [_downloadObject writeDiskCache];
         [self startDownloadAnimation];
     }
     switch (_downloadObject.downloadState) {
@@ -123,6 +125,7 @@
                                                                                           savePath:[WHC_DownloadObject videoDirectory]
                                                                                       saveFileName:_downloadObject.fileName delegate:self];
             downloadTask.index = self.index;
+            
             
 #else
             WHC_DownloadOperation * operation = [[WHC_HttpManager shared] download:_downloadObject.downloadPath

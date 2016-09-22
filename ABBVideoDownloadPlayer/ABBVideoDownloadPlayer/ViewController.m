@@ -30,9 +30,9 @@
 #import <WHCNetWorkKit/UIImageView+WHC_HttpImageView.h>
 
 #define kWHC_CellName             (@"WHC：视频下载文件")
-#define kWHC_DefaultDownloadUrl2   (@"http://cdn1.raywenderlich.com/products/ios-apprentice/6FEQS757ZG7N8JRXYMI94DI0/The_iOS_Apprentice_1_Getting_Started_v4.1.zip")
+#define kWHC_DefaultDownloadUrl   (@"http://cdn1.raywenderlich.com/products/ios-apprentice/6FEQS757ZG7N8JRXYMI94DI0/The_iOS_Apprentice_1_Getting_Started_v4.1.zip")
 
-#define kWHC_DefaultDownloadUrl   (@"http://106.38.212.21/videos/v1/20160826/90/fd/a98dffe71cac3292fc4b71c3759bddfb.mp4?key=05c2ad42b39cd738a23f957e79d8fc135&dis_k=517ecc91de785080ae71c2ee631210b7&dis_t=1474269739&src=iqiyi.com&v=841034344&qd_src=vcl&qd_tm=1474269739605&qd_ip=42.159.27.107&qd_sc=12427c9af79974537daae1d12897aae7&qypid=6265652409_-103909&uuid=2a9f1b6b-57df922b-25")
+#define kWHC_DefaultDownloadUrl2   (@"http://106.38.212.21/videos/v1/20160826/90/fd/a98dffe71cac3292fc4b71c3759bddfb.mp4?key=05c2ad42b39cd738a23f957e79d8fc135&dis_k=517ecc91de785080ae71c2ee631210b7&dis_t=1474269739&src=iqiyi.com&v=841034344&qd_src=vcl&qd_tm=1474269739605&qd_ip=42.159.27.107&qd_sc=12427c9af79974537daae1d12897aae7&qypid=6265652409_-103909&uuid=2a9f1b6b-57df922b-25")
 
 
 
